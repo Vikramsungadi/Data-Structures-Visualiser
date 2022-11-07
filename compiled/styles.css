@@ -16,6 +16,7 @@ body {
 
 @-webkit-keyframes drop {
   0% {
+    background-color: rgb(36, 242, 78);
     width: 0;
     opacity: 0;
     translate: 0 -20rem 0;
@@ -28,6 +29,7 @@ body {
 
 @keyframes drop {
   0% {
+    background-color: rgb(36, 242, 78);
     width: 0;
     opacity: 0;
     translate: 0 -20rem 0;
@@ -96,14 +98,17 @@ body {
   50% {
     opacity: 0.2;
     width: 10%;
+    background-color: red;
     scale: 1;
   }
   70% {
     opacity: 0.2;
-    width: 10%;
+    width: -webkit-max-content;
+    width: max-content;
     scale: 3;
   }
   100% {
+    background-color: red;
     opacity: 0.2;
     width: 10%;
     scale: 0;
@@ -116,14 +121,18 @@ body {
   50% {
     opacity: 0.2;
     width: 10%;
+    background-color: red;
     scale: 1;
   }
   70% {
     opacity: 0.2;
-    width: 10%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     scale: 3;
   }
   100% {
+    background-color: red;
     opacity: 0.2;
     width: 10%;
     scale: 0;
@@ -170,6 +179,7 @@ body {
   border: 1px solid black;
   -webkit-animation: drop 1s ease;
           animation: drop 1s ease;
+  transition: background-color 0.5s ease;
 }
 .stack-container.none,
 .temp-container.none {

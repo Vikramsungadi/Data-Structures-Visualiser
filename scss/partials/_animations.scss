@@ -1,18 +1,11 @@
 @keyframes drop {
   0% {
+    background-color: rgb(36, 242, 78);
     width: 0;
     opacity: 0;
     translate: (0 -20rem 0);
   }
-  //   60% {
-  //     width: 80%;
-  //     opacity: 1;
-  //     translate: (0);
-  //   }
-  //   85% {
-  //     opacity: 1;
-  //     translate: (0 -2.5rem 0);
-  //   }
+
   100% {
     opacity: 1;
     translate: (0);
@@ -61,6 +54,8 @@
   50% {
     opacity: 0.2;
     width: 10%;
+    background-color: red;
+
     // opacity: 0.2;
     // width: 10%;
     // translate: (0 -50rem 0);
@@ -69,10 +64,12 @@
   }
   70% {
     opacity: 0.2;
-    width: 10%;
+    width: max-content;
     scale: 3;
   }
   100% {
+    background-color: red;
+
     opacity: 0.2;
     width: 10%;
     scale: 0;

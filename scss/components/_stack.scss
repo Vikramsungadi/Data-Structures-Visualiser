@@ -36,6 +36,7 @@
     font-size: 3rem;
     border: 1px solid black;
     animation: drop 1s ease;
+    transition: background-color 0.5s ease;
   }
   &.none {
     display: none;
